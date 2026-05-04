@@ -14,7 +14,7 @@ from peft import LoraConfig, get_peft_model
 from tqdm import tqdm
 ###modules for hybrid ts_encoder building
 ##from modules.conv_module import ConvFeatureExtraction
-from modules.ts_encoder_rel_bias import PatchTSTEncoder
+from modules.ts_encoder_perceiver_resampler import PatchTSTEncoder
 from modules.ts_encoder import llm_projection
 
 device ='cuda' if torch.cuda.is_available() else 'cpu'
